@@ -13,14 +13,13 @@
 7.git commit -m "message" - 메시지를 입력하고 로컬 저장소로 보냄 
 8.git remote add origin “remote repository url” - 첫 커밋할때만 사용
  - origin에 온라인(remote) 저장소 주소를 등록(add)합니다.
-9.git push -u origin ㅡmain - 첫 커밋할때만 사용, main:Remote github 브랜치명
-10.git push -u origin main - 첫 커밋할때만 사용, 이후에는 git push 명령어만 사용
-11.git 명령어 
+9.git push -u origin main - 첫 커밋할때만 사용, main:Remote github 브랜치명, 이후에는 git push 명령어만 사용
+10.git 명령어 
  1)git reflog : github action log history 정보를 보여줌
  2)git log --online
  3)git reset --hard commit번호 : 이전 commit 버전 상태로 돌아간다. 로그 history 목록에서도 사라진다.
  4)git revert
-12.git push 충돌시 
+11.git push 충돌시 
  1)git pull origin main
    - 파일에 충돌결과를 표시해준다.
  2)파일을 수정하고 add -> commit -> push
