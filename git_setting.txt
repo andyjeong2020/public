@@ -1,0 +1,26 @@
+1.로컬에 git 설치 
+ - http://git-scm.com/download/win
+2.git Hub 계정 생성하기
+ - 참조 사이트 -> https://medium.com/webeveloper/깃허브-사용방법-github-tutorials-4a63f31bb6a5 
+ - https://github.com
+3.git config - git hub 계정 연동
+ git config --global user.name "닉네임"
+ git config --global user.email "이메일" 
+4.git init - 로컬 저장소 생성
+5.git clone "[git 온라인 저장소 주소]" - 온라인 저장소를 local 컴퓨터에 저장하는 명령어
+6.git add 파일명 - 해당 파일명을 Staging Area로 보냄
+  - git add * : 새로 생성한 모든 파일을 Staging Area로 보냄.
+7.git commit -m "message" - 메시지를 입력하고 로컬 저장소로 보냄 
+8.git remote add origin “remote repository url” - 첫 커밋할때만 사용
+ - origin에 온라인(remote) 저장소 주소를 등록(add)합니다.
+9.git push -u origin ㅡmain - 첫 커밋할때만 사용, main:Remote github 브랜치명
+10.git push -u origin main - 첫 커밋할때만 사용, 이후에는 git push 명령어만 사용
+11.git 명령어 
+ 1)git reflog : github action log history 정보를 보여줌
+ 2)git log --online
+ 3)git reset --hard commit번호 : 이전 commit 버전 상태로 돌아간다. 로그 history 목록에서도 사라진다.
+ 4)git revert
+12.git push 충돌시 
+ 1)git pull origin main
+   - 파일에 충돌결과를 표시해준다.
+ 2)파일을 수정하고 add -> commit -> push
