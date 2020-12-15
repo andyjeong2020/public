@@ -19,7 +19,7 @@
  2)git log --online
  3)git reset --hard commit번호 : 이전 commit 버전 상태로 돌아간다. 로그 history 목록에서도 사라진다.
  4)git revert
-11.git push 충돌시 
+11.git push 충돌시 처리방법
  1)git pull origin main
    - 파일에 충돌결과를 표시해준다.
  2)파일을 수정하고 add -> commit -> push
